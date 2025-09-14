@@ -1,0 +1,236 @@
+/* ================= Header ================= */
+.work-detail-header {
+  border: 2px solid #b0c4de;
+  border-bottom: none;
+  padding: 14px 24px;
+  background: #f0f6ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.workmanager-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* ================= Main Layout ================= */
+.work-detail-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background: #f5f7fa;
+  border-radius: 0 0 8px 8px;
+}
+
+/* ================= Left Panel ================= */
+.work-detail-main {
+  flex: 2;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #b0c4de;
+}
+
+.work-detail-main-upper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.work-detail-span {
+  flex: 1;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  position: relative;
+  text-align: center;
+}
+
+.work-detail-span input,
+.work-detail-span select {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #b0c4de;
+  padding: 6px 10px;
+  background: #f9f9ff;
+}
+
+/* ================= Status Badges ================= */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.status-open {
+  background: #28a745; /* green */
+}
+
+.status-hold {
+  background: #ffc107; /* yellow */
+  color: #333;
+}
+
+.status-close {
+  background: #dc3545; /* red */
+}
+
+.status-testing {
+  background: #007bff; /* blue */
+}
+
+/* ================= Right Panel ================= */
+.work-detail-right {
+  flex: 1;
+  background: #f9fbff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #b0c4de;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03);
+}
+
+.work-detail-right-item {
+  border: 1.5px solid #b0c4de;
+  border-radius: 8px;
+  background: #fff;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: #0078d4;
+  font-weight: 500;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ================= Form Inputs ================= */
+.work-detail-input {
+  padding: 8px 10px;
+  border: 1.5px solid #b0c4de;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9ff;
+  transition: border 0.2s;
+}
+
+.work-detail-input:focus {
+  outline: none;
+  border-color: #0078d4;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.3);
+}
+
+/* ================= Comments ================= */
+.work-detail-main-lower {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work-detail-comment-area {
+  width: 96%;
+  min-height: 70px;
+  border: 1.5px solid #b0c4de;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  resize: vertical;
+  background: #f9f9ff;
+}
+
+.work-detail-comment-btn {
+  align-self: flex-end;
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.work-detail-comment-btn:hover {
+  background: #005fa3;
+}
+
+.work-detail-comments-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work-detail-comment-item {
+  position: relative;
+  background: #e6f0ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #b0c4de;
+}
+
+.work-detail-comment-item input {
+  width: calc(100% - 40px);
+  border: 1px solid #b0c4de;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 1rem;
+}
+
+/* ================= Comment Icons ================= */
+.comment-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #0078d4;
+  transition: color 0.2s;
+}
+
+.comment-icon:hover {
+  color: #005fa3;
+}
+
+/* ================= Edit / Save Buttons ================= */
+.work-detail-edit-btn {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.work-detail-edit-btn:hover {
+  background: #005fa3;
+}
+
+.work-detail-no-comments {
+  color: #888;
+  font-style: italic;
+  padding: 8px 0;
+}

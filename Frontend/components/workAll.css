@@ -1,0 +1,30 @@
+.work-all-container {
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 20px 0;
+}
+
+.work-all-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.work-all-table th,
+.work-all-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.work-all-table th {
+  background: #e6f0ff;
+}
+
+.work-all-empty {
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
